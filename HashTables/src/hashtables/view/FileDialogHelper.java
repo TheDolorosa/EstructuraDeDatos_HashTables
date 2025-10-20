@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package hashtables.view;
 
+import javax.swing.*;
+import java.io.File;
+
 /**
- *
- * @author danie
+ * Clase auxiliar para abrir y guardar archivos mediante cuadros de diálogo.
  */
 public class FileDialogHelper {
-    
+
+    public static File abrirArchivo(JFrame frame) {
+        JFileChooser chooser = new JFileChooser();
+        int result = chooser.showOpenDialog(frame);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            return chooser.getSelectedFile();
+        }
+        return null;
+    }
+
+    public static void mostrarMensaje(JFrame frame, String mensaje) {
+        JOptionPane.showMessageDialog(frame, mensaje);
+    }
 }

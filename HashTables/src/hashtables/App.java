@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package hashtables;
 
 /**
- *
+ * Clase principal del proyecto.
+ * Desde aquí se podrá ejecutar el programa, 
+ * ya sea en modo consola o inicializando la interfaz gráfica.
+ * 
  * @author danie
  */
 public class App {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Punto de entrada del programa.
+        // Más adelante desde aquí podremos crear la interfaz o hacer pruebas de la lógica.
+
+        System.out.println("Proyecto HashTables iniciado correctamente.");
     }
-    
 }
